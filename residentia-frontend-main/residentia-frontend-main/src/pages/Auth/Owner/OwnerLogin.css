@@ -1,0 +1,195 @@
+/* ===== OWNER LOGIN PAGE ===== */
+.owner-login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3e7e9 0%, #e3f2fd 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-card h3 {
+  color: #1f2937;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.login-card .form-label {
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.login-card .form-control {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.login-card .form-control:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  outline: none;
+}
+
+.login-card .btn-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border: none;
+  padding: 0.75rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.login-card .btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.login-card .btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-card .btn-link {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.login-card .btn-link:hover {
+  color: #3b82f6;
+}
+
+.login-card .text-center {
+  text-align: center;
+}
+
+.login-card .text-muted {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.login-card .text-muted br {
+  content: "";
+}
+
+.login-card .mb-3 {
+  margin-bottom: 1rem;
+}
+
+.login-card .mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.login-card .p-0 {
+  padding: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 2rem;
+    max-width: 100%;
+  }
+
+  .login-card h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .owner-login-page {
+    padding: 1rem;
+  }
+
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .login-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .login-card .form-control {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== INPUT HELPER TEXT ===== */
+.input-helper {
+  display: block;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.input-label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.pg-input {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.pg-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* ===== FORGOT PASSWORD ===== */
+.forgot-password-btn {
+  color: #3b82f6;
+  font-size: 0.85rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.forgot-password-btn:hover {
+  text-decoration: underline;
+}
+
+/* ===== ADMIN NOTE ===== */
+.admin-note {
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  text-align: center;
+  background: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 6px;
+}

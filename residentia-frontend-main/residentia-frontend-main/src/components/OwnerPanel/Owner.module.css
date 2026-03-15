@@ -1,0 +1,491 @@
+/* ================= OWNER DASHBOARD (TOP BAR ONLY) ================= */
+
+.appWrapper {
+  background: linear-gradient(135deg, #f0f9ff 0%, #fdf4ff 100%);
+  min-height: 100vh;
+  color: #212529;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+}
+
+/* ================= HEADER ================= */
+
+.headerNav {
+  background: linear-gradient(135deg, #ffffff 0%, #fefefe 100%);
+  padding: 16px 32px;
+  border-bottom: 2px solid #e0e7ff;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+}
+
+.logoEmoji {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.appTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.welcomeText {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.ownerName {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.logoutBtn {
+  border: 1px solid #dc2626 !important;
+  color: #dc2626 !important;
+  background-color: transparent !important;
+}
+
+.logoutBtn:hover {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+}
+
+/* ================= TOP TABS BAR ================= */
+
+.tabsWrapper {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 32px;
+}
+
+.tabItem {
+  padding: 14px 0;
+  cursor: pointer;
+  color: #6b7280;
+  border-bottom: 3px solid transparent;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.tabHover {
+  color: #374151 !important;
+}
+
+.tabActive {
+  color: #3b82f6 !important;
+  border-bottom: 3px solid #3b82f6 !important;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.mainContent {
+  padding: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ================= TITLES ================= */
+
+.sectionTitle {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1f2937;
+}
+
+.subTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #374151;
+}
+
+/* ================= STAT CARDS ================= */
+
+.statCard {
+  background: linear-gradient(135deg, #ffffff 0%, #fefefe 100%);
+  border: 2px solid #e0e7ff;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.06);
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+  border-color: #c7d2fe;
+}
+
+.statValue {
+  font-size: 34px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statLabel {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ================= TABLES ================= */
+
+.tableWrapper {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+.tableHeadRow {
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+  border-bottom: 2px solid #a5b4fc;
+}
+
+.tableHead {
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 14px 16px !important;
+}
+
+.tableRow {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.tableRow:nth-child(even) {
+  background-color: #faf5ff;
+}
+
+.tableRow:hover {
+  background-color: #f5f3ff;
+  transform: scale(1.005);
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tableCell {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.tableWrapper thead th {
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%) !important;
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid #a5b4fc !important;
+}
+
+.tableWrapper tbody tr:nth-child(even) {
+  background-color: #faf5ff;
+}
+
+.tableWrapper tbody tr:hover {
+  background-color: #f5f3ff;
+  transform: scale(1.005);
+  transition: all 0.2s ease;
+}
+
+.tableWrapper td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* ================= STATUS BADGES ================= */
+
+.statusBadge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.confirmed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.pending {
+  background-color: #ffedd5;
+  color: #92400e;
+}
+
+/* ================= PROPERTY CARDS ================= */
+
+.propertyCard {
+  background: linear-gradient(135deg, #ffffff 0%, #fefefe 100%);
+  border: 2px solid #e0e7ff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.06);
+}
+
+.propertyCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.12);
+  border-color: #c7d2fe;
+}
+
+.propertyImage {
+  background-color: #f3f4f6;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.propertyBody {
+  padding: 20px;
+}
+
+.propName {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1f2937;
+}
+
+.propLocation {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.propPrice {
+  font-size: 16px;
+  font-weight: 600;
+  color: #059669;
+}
+
+/* ================= BUTTONS ================= */
+
+.primaryBtn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* ================= BOOKING CARDS (AIRBNB STYLE) ================= */
+
+.bookingsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.bookingCardOwner {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.bookingCardOwner:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.propertyTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.guestDetails {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 10px;
+}
+
+.guestAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.guestName {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111827;
+}
+
+.guestPhone {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.dateSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f5f3ff 0%, #faf5ff 100%);
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+}
+
+.dateBox {
+  flex: 1;
+}
+
+.dateLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: #6366f1;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.dateValue {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dateDivider {
+  font-size: 20px;
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.amountSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.amountLabel {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.amountValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.cardActions {
+  display: flex;
+  gap: 10px;
+}
+
+.viewBtn {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.viewBtn:hover {
+  border-color: #6366f1;
+  color: #6366f1;
+  background: #f5f3ff;
+}
+
+.confirmBtn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirmBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.emptyText {
+  text-align: center;
+  color: #9ca3af;
+  padding: 40px;
+  font-size: 16px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .headerNav,
+  .tabsWrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .mainContent {
+    padding: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+  }
+}

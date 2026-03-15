@@ -1,0 +1,73 @@
+.aboutPage {
+  background: linear-gradient(135deg, #f0f9ff 0%, #fdf4ff 100%);
+  min-height: 90vh;
+  padding: 5px 20px;
+}
+
+/* OUTSIDE TITLE */
+.pageTitle {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* CARD CONTAINER */
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.card {
+  background: linear-gradient(135deg, #ffffff 0%, #fefefe 100%);
+  border: 2px solid #e0e7ff;
+  border-radius: 18px;
+  padding: 35px;
+  color: #1f2937;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.12);
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.section h2 {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.section p,
+.section li {
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #374151;
+}
+
+.backBtn {
+  background: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.backBtn:hover {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+}
