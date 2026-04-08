@@ -204,5 +204,3 @@ PG-DAC, Sunbeam Institute | Aug 2025 Batch
 [GitHub](https://github.com/Prajwal4581)
 
 ---
-
-> ⚠️ **Note:** Never commit `application.properties` with real credentials. Use environment variables or a secrets manager in production.
