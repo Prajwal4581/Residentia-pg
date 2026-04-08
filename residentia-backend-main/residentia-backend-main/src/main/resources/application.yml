@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://residentia-db.cp2s0wi2ykmu.ap-south-1.rds.amazonaws.com:3306/residentia_db
-    username: admin
-    password: Residentia25
+    username: XYZ  //changes as per user
+    password: ******** //changes as per user
 
   jpa:
     hibernate:
@@ -30,8 +30,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: hspatil222002@gmail.com
-    password: wrbhlpyrnefljvig
+    username: abc@gmail.com     //changes as per user
+    password: *********   //changes as per user
     properties:
       mail:
         smtp:
@@ -54,9 +54,9 @@ jwt:
 # Cloudinary Configuration (Optional)
 # If not configured, the application will fall back to local file storage
 cloudinary:
-  cloud-name: ${CLOUDINARY_CLOUD_NAME:doux976kl}
-  api-key: ${CLOUDINARY_API_KEY:553679296573887}
-  api-secret: ${CLOUDINARY_API_SECRET:xdyGM0V8Q6jBkx1I3ZNlZVoZRCc}
+  cloud-name: ******
+  api-key: *******
+  api-secret: ******
 
 logging:
   level:
